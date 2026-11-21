@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d4g4u8q8b7rsx" path="res://examples/fsm_character_controller/MrBlacksmith.gd" id="1_o56o3"]
 [ext_resource type="Texture2D" uid="uid://cp4n4mks4l6t4" path="res://examples/assets/actors/tiny_blacksmith.png" id="2_qa7vs"]
-[ext_resource type="Script" uid="uid://b0bqn8gtyevqu" path="res://addons/behaviour_toolkit/finite_state_machine/fsm.gd" id="3_4ougi"]
+[ext_resource type="Script" uid="uid://b0bqn8gtyevqu" path="res://addons/sadsha_behaviour_kit/finite_state_machine/fsm.gd" id="3_4ougi"]
 [ext_resource type="Script" uid="uid://b8cyip4l40jgx" path="res://examples/fsm_character_controller/states/IDLE.gd" id="4_xi524"]
 [ext_resource type="Script" uid="uid://clqh1515due6x" path="res://examples/fsm_character_controller/transitions/onStartMoving.gd" id="5_tacxr"]
 [ext_resource type="Script" uid="uid://cvjqfgfhu2yue" path="res://examples/fsm_character_controller/states/MOVING.gd" id="6_xf37u"]

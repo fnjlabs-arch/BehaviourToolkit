@@ -1,13 +1,13 @@
 ![Thumbnail](docs/thumbnail.svg)
-# BehaviourToolkit for Godot 4
+# SadSha Behaviour Kit for Godot 4
 This plugin provides a set of tools to create custom and complex behaviour in the Godot 4.x Game Engine.
 
 ### Features
-- ![GEAR ICON](addons/behaviour_toolkit/icons/Gear.svg) Behaviour Architectures
-    - ![FMS ICON](addons/behaviour_toolkit/icons/FiniteStateMachine.svg) Finite State Machine
-    - ![BT ICON](addons/behaviour_toolkit/icons/BTRoot.svg) Behaviour Tree with generic utility 
-    - ![Integration Icon](addons/behaviour_toolkit/icons/BTCompositeIntegration.svg) Nest Behaviour Trees inside State Machines and vice versa!
-- ![BLACKBOARD ICON](addons/behaviour_toolkit/icons/Blackboard.svg) Blackboard Resource
+- ![GEAR ICON](addons/sadsha_behaviour_kit/icons/Gear.svg) Behaviour Architectures
+    - ![FMS ICON](addons/sadsha_behaviour_kit/icons/FiniteStateMachine.svg) Finite State Machine
+    - ![BT ICON](addons/sadsha_behaviour_kit/icons/BTRoot.svg) Behaviour Tree with generic utility 
+    - ![Integration Icon](addons/sadsha_behaviour_kit/icons/BTCompositeIntegration.svg) Nest Behaviour Trees inside State Machines and vice versa!
+- ![BLACKBOARD ICON](addons/sadsha_behaviour_kit/icons/Blackboard.svg) Blackboard Resource
 - Editor Interface with shortcuts
 - [Templates](docs/documentation.md#using-script-templates) for easy extension and integration
 - Example Scene
@@ -48,13 +48,11 @@ Now you can implement your own behaviour logic using the virtual methods provide
 
 
 
-## Notes 
-This is the first time I've ever made a bigger plugin for Godot, so I am happy for any suggestions, feedback and contributions. If you need help or have any questions, feel free to contact me on Discord (`thepat02`) or open an issue on GitHub!
-
-You can also [buy me a coffee](https://ko-fi.com/pat02) if you like the plugin and feel like supporting me :D
+## Notes
+**SadSha Behaviour Kit** is a rebrand of BehaviourToolkit by Pat & Contributors (MIT, see `LICENSE`). If you need help or have any questions, please open an issue on GitHub!
 
 Have fun creating awesome behaviours!
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ThePat02/BehaviourToolkit&type=Timeline)](https://star-history.com/#ThePat02/BehaviourToolkit&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=fnjlabs-arch/BehaviourToolkit&type=Timeline)](https://star-history.com/#fnjlabs-arch/BehaviourToolkit&Timeline)

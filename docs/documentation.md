@@ -73,7 +73,7 @@ The node icons where designed/choosen to give you a quick overview of their purp
 
 
 ##  Nodes
-### ![FiniteStateMachine Icon](../addons/behaviour_toolkit/icons/FiniteStateMachine.svg) FiniteStateMachine
+### ![FiniteStateMachine Icon](../addons/sadsha_behaviour_kit/icons/FiniteStateMachine.svg) FiniteStateMachine
 This is the root node of the State Machine. All `FSMStates` must be children of this node.
 
 #### Properties
@@ -103,7 +103,7 @@ This is the root node of the State Machine. All `FSMStates` must be children of 
 	- Emitted when the current state changes.
 
 
-### ![FSM State Icon](../addons/behaviour_toolkit/icons/FSMState.svg) FSMState
+### ![FSM State Icon](../addons/sadsha_behaviour_kit/icons/FSMState.svg) FSMState
 This is the base class for all states. On ready, all `FSMTransition` child nodes will be set up as transitions. To implement your logic you can override the `_on_enter`, `_on_update` and `_on_exit` methods when extending the node's script.
 
 #### Methods
@@ -114,7 +114,7 @@ This is the base class for all states. On ready, all `FSMTransition` child nodes
 - void `_on_exit(actor: Node, blackboard: Blackboard)`
 	- Called when the state is exited.
 
-### ![NestedFSM Icon](../addons/behaviour_toolkit/icons/FSMState.svg) NestedFSM
+### ![NestedFSM Icon](../addons/sadsha_behaviour_kit/icons/FSMState.svg) NestedFSM
 A `NestedFSM` is a special type of `FSMState` that contains its own `FiniteStateMachine`.  
 This allows you to build **hierarchical state machines**, useful for organizing complex behaviours.
 
@@ -137,7 +137,7 @@ This allows you to build **hierarchical state machines**, useful for organizing 
   Emitted whenever the nested FSM switches its current state.
 
 
-### ![FSM Transition Icon](../addons/behaviour_toolkit/icons/FSMTransition.svg) FSMTransition
+### ![FSM Transition Icon](../addons/sadsha_behaviour_kit/icons/FSMTransition.svg) FSMTransition
 This is the base class for all transitions. To implement your logic you can override the `_on_transition` method when extending the node's script. To setup custom conditions you can override the `is_valid` method. If you want to use events to trigger the transition, set `use_event` to `true` and set the `event` property to the name of the event you want to listen for.
 
 #### Properties
@@ -168,7 +168,7 @@ A behavior tree is a mathematical model of plan execution used in computer scien
 
 
 ## Tree Nodes
-### ![BTRoot Icon](../addons/behaviour_toolkit/icons/BTRoot.svg) BTRoot
+### ![BTRoot Icon](../addons/sadsha_behaviour_kit/icons/BTRoot.svg) BTRoot
 This is the root of your behaviour tree. It is designed to only have one child node, which should be a `BTComposite` node. The root node is responsible for updating the tree.
 
 #### Properties
@@ -187,20 +187,20 @@ This is the root of your behaviour tree. It is designed to only have one child n
 	- When left empty, a new local blackboard will be created. Otherwise the given blackboard will be used, which can be shared between multiple State Machines and Behaviour Trees.
 
 
-### ![BTComposite Icon](../addons/behaviour_toolkit/icons/BTComposite.svg) BTComposite
+### ![BTComposite Icon](../addons/sadsha_behaviour_kit/icons/BTComposite.svg) BTComposite
 Composites nodes are used to combine multiple leaves into a single node and evalute/execute them in a specific order. There are different types of composites:
 
-- ![BTCompositeSequence Icon](../addons/behaviour_toolkit/icons/BTCompositeSequence.svg) BTSequence
+- ![BTCompositeSequence Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeSequence.svg) BTSequence
   - Succeeds if all leaves succeed, fails if one leaf fails.
-  - ![BTCompositeRandomSequence Icon](../addons/behaviour_toolkit/icons/BTCompositeRandomSequence.svg) BTRandomSequence can be used to randomize the order of the leaves.
-- ![BTCompositeSelector Icon](../addons/behaviour_toolkit/icons/BTCompositeSelector.svg) BTSelector
+  - ![BTCompositeRandomSequence Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeRandomSequence.svg) BTRandomSequence can be used to randomize the order of the leaves.
+- ![BTCompositeSelector Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeSelector.svg) BTSelector
   - Selects the first leaf that succeeds, fails if all leaves fail.
-  - ![BTCompositeRandomSelector Icon](../addons/behaviour_toolkit/icons/BTCompositeRandomSelector.svg) BTRandomSelector can be used to randomize the order of the leaves.
-- ![BTSimpleParallel Icon](../addons/behaviour_toolkit/icons/BTSimpleParallel.svg) BTSimpleParallel
+  - ![BTCompositeRandomSelector Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeRandomSelector.svg) BTRandomSelector can be used to randomize the order of the leaves.
+- ![BTSimpleParallel Icon](../addons/sadsha_behaviour_kit/icons/BTSimpleParallel.svg) BTSimpleParallel
   - Executes all leaves in parallel.
   - Fails if any leaf fails.
   - Depending on the set policy it will succeed if all leaves succeed or if any leaf succeeds.
-- ![BTCompositeRandom Icon](../addons/behaviour_toolkit/icons/BTCompositeRandom.svg) BTRandom
+- ![BTCompositeRandom Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeRandom.svg) BTRandom
   - One leaf is selected at random and executed.
 
 #### Properties
@@ -208,31 +208,31 @@ Composites nodes are used to combine multiple leaves into a single node and eval
 	- The leaves that are the children of this node.
 
 
-### ![BTLeaf Icon](../addons/behaviour_toolkit/icons/BTLeaf.svg) BTLeaf
+### ![BTLeaf Icon](../addons/sadsha_behaviour_kit/icons/BTLeaf.svg) BTLeaf
 A leaf is where the actual behaviour logic is implemented. It is the base class for all leaves and can be extended to implement custom behaviour. The `tick(actor: Node, blackboard: Blackboard)` method is called every frame and should return a `Status`. There are a few example leaves that you can use out of the box:
 
-- ![LeafPrint Icon](../addons/behaviour_toolkit/icons/BTLeafPrint.svg) Print
+- ![LeafPrint Icon](../addons/sadsha_behaviour_kit/icons/BTLeafPrint.svg) Print
   - Prints a message to the console. Very handy for debugging.
-- ![LeafWait Icon](../addons/behaviour_toolkit/icons/BTLeafWait.svg) Wait
+- ![LeafWait Icon](../addons/sadsha_behaviour_kit/icons/BTLeafWait.svg) Wait
   - Waits for a given amount of ticks.
-- ![LeafSignal Icon](../addons/behaviour_toolkit/icons/BTLeafSignal.svg) Signal
+- ![LeafSignal Icon](../addons/sadsha_behaviour_kit/icons/BTLeafSignal.svg) Signal
   - Emits a signal with optional arguments in an Array. Always returns a SUCCESS.
 
 A script template is also available to make it easier to extend the `BTLeaf` class.
 
 
-### ![BTDecorator Icon](../addons/behaviour_toolkit/icons/BTDecorator.svg) BTDecorator
+### ![BTDecorator Icon](../addons/sadsha_behaviour_kit/icons/BTDecorator.svg) BTDecorator
 Decorators are used to augment the behaviour of a leaf. Think of it as another layer of logic that is executed before the leaf. There are a few example decorators that you can use out of the box:
 
-- ![BTDecoratorFail Icon](../addons/behaviour_toolkit/icons/BTDecoratorFail.svg) AlwaysFail
+- ![BTDecoratorFail Icon](../addons/sadsha_behaviour_kit/icons/BTDecoratorFail.svg) AlwaysFail
   - The leaf always fails.
-- ![BTDecoratorSucceed Icon](../addons/behaviour_toolkit/icons/BTDecoratorSucceed.svg) AlwaysSucceed
+- ![BTDecoratorSucceed Icon](../addons/sadsha_behaviour_kit/icons/BTDecoratorSucceed.svg) AlwaysSucceed
   - The leaf always succeeds.
-- ![BTDecoratorLimiter Icon](../addons/behaviour_toolkit/icons/BTDecoratorLimiter.svg) Limiter
+- ![BTDecoratorLimiter Icon](../addons/sadsha_behaviour_kit/icons/BTDecoratorLimiter.svg) Limiter
   - Limits the number of times a leaf can be executed.
-- ![BTInverter Icon](../addons/behaviour_toolkit/icons/BTDecoratorNot.svg) Inverter
+- ![BTInverter Icon](../addons/sadsha_behaviour_kit/icons/BTDecoratorNot.svg) Inverter
   - Inverts the result of the leaf.
-- ![BTDecoratorRepeat Icon](../addons/behaviour_toolkit/icons/BTDecoratorRepeat.svg) Repeater
+- ![BTDecoratorRepeat Icon](../addons/sadsha_behaviour_kit/icons/BTDecoratorRepeat.svg) Repeater
   - Repeats the leaf a given number of times.
 
 
@@ -248,7 +248,7 @@ All nodes extending from `BTBehaviour`, which are `BTLeaf` , `BTDecorator` and `
 
 
 
-# ![BLACKBOARD ICON](../addons/behaviour_toolkit/icons/Blackboard.svg) Blackboard
+# ![BLACKBOARD ICON](../addons/sadsha_behaviour_kit/icons/Blackboard.svg) Blackboard
 A blackboard is a simple key-value store that can be used to share data between different nodes. It is used by the `BehaviourTree` and `FiniteStateMachine` nodes to store and retrieve data.
 
 ## Creating a new Blackboard
@@ -293,10 +293,10 @@ Additionally can also directly access the dictionary through the `content` prope
 You can nest `BTRoot` nodes inside `FinitStateMachine` nodes and vice versa! Think of the respective node as another State/Leaf and you can use all the same logic to control the behaviour. This allows you to create very complex behaviours by combining different architectures.
 
 ## State Machine nested in Behaviour Tree
-To nest a State Machine you need to use ![IntegradeFSM Icon](../addons/behaviour_toolkit/icons/BTCompositeIntegration.svg) `IntegratedFSM` composite node and add a `FiniteStateMachine` as a child. The `IntegratedFSM` node will then act as a leaf and execute the State Machine. If you want to exit the State Machine, you let it navigate to a ![Icon Return](../addons/behaviour_toolkit/icons/FSMStateIntegrationReturn.svg) `IntegratioReturn` state and the `IntegratedFSM` will return `SUCCESS` or `FAILURE` depending on the state's `return_status` property.
+To nest a State Machine you need to use ![IntegradeFSM Icon](../addons/sadsha_behaviour_kit/icons/BTCompositeIntegration.svg) `IntegratedFSM` composite node and add a `FiniteStateMachine` as a child. The `IntegratedFSM` node will then act as a leaf and execute the State Machine. If you want to exit the State Machine, you let it navigate to a ![Icon Return](../addons/sadsha_behaviour_kit/icons/FSMStateIntegrationReturn.svg) `IntegratioReturn` state and the `IntegratedFSM` will return `SUCCESS` or `FAILURE` depending on the state's `return_status` property.
 
 ## Behaviour Tree nested in State Machine
-To nest a Behaviour Tree you need to use ![IntegradeBT Icon](../addons/behaviour_toolkit/icons/FSMStateIntegration.svg) `IntegrationBT` state and add a `BTRoot` as a child. When this state is entered, the Behaviour Tree is set to active. You can use the `fire_event_on_status` property to fire an event when the Behaviour Tree returns a specific status. This allows you to trigger transitions based on the status of the Behaviour Tree. You can also use the `FSMEvent` leaf to trigger custom events inside the nested State Machine.
+To nest a Behaviour Tree you need to use ![IntegradeBT Icon](../addons/sadsha_behaviour_kit/icons/FSMStateIntegration.svg) `IntegrationBT` state and add a `BTRoot` as a child. When this state is entered, the Behaviour Tree is set to active. You can use the `fire_event_on_status` property to fire an event when the Behaviour Tree returns a specific status. This allows you to trigger transitions based on the status of the Behaviour Tree. You can also use the `FSMEvent` leaf to trigger custom events inside the nested State Machine.
 
 
 
@@ -316,7 +316,7 @@ You can find all templates inside the `script_templates` directory, so make sure
 Examples are located in the `examples` directory. (What a surprise!)
 
 ## Example: Busy villagers drinking, becoming ghosts and moving to random positions
-This example is a very messy implementation of the BehaviourToolkit and is only meant to show (and test) as many features as possible. It will be replaced with a simpler example in the future. Here are some of the used features:
+This example is a very messy implementation of the SadSha Behaviour Kit and is only meant to show (and test) as many features as possible. It will be replaced with a simpler example in the future. Here are some of the used features:
 
 - Behaviour Tree
   - Composite Nodes

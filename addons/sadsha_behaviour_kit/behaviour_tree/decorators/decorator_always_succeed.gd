@@ -1,0 +1,13 @@
+@tool
+@icon("res://addons/sadsha_behaviour_kit/icons/BTDecoratorSucceed.svg")
+class_name BTAlwaysSucceed extends BTDecorator
+## The leaf will always succeed after running.
+
+
+func tick(delta: float, actor: Node, blackboard: Blackboard):
+	var response = leaf.tick(delta, actor, blackboard)
+
+	if response == BTStatus.RUNNING:
+		return BTStatus.RUNNING
+
+	return BTStatus.SUCCESS

@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://b06wtene10wks" path="res://examples/nested_fsm_controller/NestedMrBlacksmith.gd" id="1_aurnf"]
 [ext_resource type="Texture2D" uid="uid://cp4n4mks4l6t4" path="res://examples/assets/actors/tiny_blacksmith.png" id="2_fpsu8"]
-[ext_resource type="Script" uid="uid://b0bqn8gtyevqu" path="res://addons/behaviour_toolkit/finite_state_machine/fsm.gd" id="3_r6iyk"]
+[ext_resource type="Script" uid="uid://b0bqn8gtyevqu" path="res://addons/sadsha_behaviour_kit/finite_state_machine/fsm.gd" id="3_r6iyk"]
 [ext_resource type="Script" uid="uid://b8cyip4l40jgx" path="res://examples/fsm_character_controller/states/IDLE.gd" id="4_7vpcd"]
-[ext_resource type="Script" uid="uid://cffv6g18yifit" path="res://addons/behaviour_toolkit/finite_state_machine/nested_fsm.gd" id="4_s70fg"]
+[ext_resource type="Script" uid="uid://cffv6g18yifit" path="res://addons/sadsha_behaviour_kit/finite_state_machine/nested_fsm.gd" id="4_s70fg"]
 [ext_resource type="Script" uid="uid://clqh1515due6x" path="res://examples/fsm_character_controller/transitions/onStartMoving.gd" id="5_vlchv"]
 [ext_resource type="Script" uid="uid://cvjqfgfhu2yue" path="res://examples/fsm_character_controller/states/MOVING.gd" id="6_cdhgq"]
 [ext_resource type="Script" uid="uid://djobir3d8k83r" path="res://examples/fsm_character_controller/transitions/onStopMoving.gd" id="7_ijy0l"]

@@ -29,9 +29,9 @@ jobs:
 
     - name: Update from Main
       run: |
-        git checkout main -- addons/behaviour_toolkit
-        mv addons/behaviour_toolkit/* .
-        git rm -r addons/behaviour_toolkit
+        git checkout main -- addons/sadsha_behaviour_kit
+        mv addons/sadsha_behaviour_kit/* .
+        git rm -r addons/sadsha_behaviour_kit
 
     - name: Commit to Submodule
       continue-on-error: true

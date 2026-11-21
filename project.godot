@@ -10,21 +10,21 @@ config_version=5
 
 [application]
 
-config/name="BehaviourToolkit"
+config/name="SadSha Behaviour Kit"
 run/main_scene="res://examples/fsm_character_controller/fsm_character_controller.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://addons/behaviour_toolkit/icons/Logo.png"
+config/icon="res://addons/sadsha_behaviour_kit/icons/Logo.png"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/behaviour_toolkit/plugin.cfg")
+enabled=PackedStringArray("res://addons/sadsha_behaviour_kit/plugin.cfg")
 
 [file_customization]
 
 folder_colors={
-"res://addons/behaviour_toolkit/": "orange",
-"res://addons/behaviour_toolkit/icons/": "purple",
-"res://addons/behaviour_toolkit/ui/": "green",
+"res://addons/sadsha_behaviour_kit/": "orange",
+"res://addons/sadsha_behaviour_kit/icons/": "purple",
+"res://addons/sadsha_behaviour_kit/ui/": "green",
 "res://docs/": "blue",
 "res://examples/": "pink",
 "res://script_templates/": "green"
